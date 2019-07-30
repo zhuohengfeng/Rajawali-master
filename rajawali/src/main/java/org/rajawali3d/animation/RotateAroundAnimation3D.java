@@ -29,6 +29,10 @@ public class RotateAroundAnimation3D extends Animation3D {
 		mAxis = axis;
 	}
 
+	public void setCenter(Vector3 center) {
+		mCenter = center;
+	}
+
 	@Override
 	protected void applyTransformation() {
 		final double radians = 360f * mInterpolatedTime * MathUtil.PRE_PI_DIV_180;
